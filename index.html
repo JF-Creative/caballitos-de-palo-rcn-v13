@@ -10,23 +10,26 @@
 
 <body>
     <div class="grid-container">
-        <header>
-            <img class="main-title" src="public/20240616_Logo_V13-Caballitos-Palo-color.png" alt="13.ª Cabalgata con Caballitos de Palo RCN Ibagué" />
-        </header>
-        <main>
-            <section class="time-container">
-                <h1>Falta:</h1>
-                <h1 id="remain"></h1>
-            </section>
-            <section class="patreons">
-                <h2>Patrocina:</h2>
-                <img id="patreon" src="public/AJUSTADOR-LOGOS_0007_MERCACENTRO.png" alt="Logo Patrocinador" />
-            </section>
-        </main>
-        <footer>
-            <p>Escuche nuestras emisoras: </p>
-            <img class="footer-image" src="public/BANNER 1.png" alt="RCN Radio Ibagué" />
-        </footer>
+        <div class="card-container">
+            <header>
+                <img class="main-title" src="public/20240616_Logo_V13-Caballitos-Palo-color.png"
+                    alt="13.ª Cabalgata con Caballitos de Palo RCN Ibagué" />
+            </header>
+            <main>
+                <section class="time-container">
+                    <h2>Falta:</h2>
+                    <p id="remain"></p>
+                </section>
+                <section class="patreons">
+                    <h2>Patrocina:</h2>
+                    <img id="patreon" src="public/AJUSTADOR-LOGOS_0007_MERCACENTRO.png" alt="Logo Patrocinador" />
+                </section>
+            </main>
+            <footer>
+                <h3>Escuche nuestras emisoras: </h3>
+                <img class="footer-image" src="public/BANNER 1.png" alt="RCN Radio Ibagué" />
+            </footer>
+        </div>
     </div>
     <script src="timer.js"></script>
     <script src="patreons.js"></script>

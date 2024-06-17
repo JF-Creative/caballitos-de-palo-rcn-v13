@@ -8,63 +8,123 @@
     box-sizing: border-box;
 }
 
+/*Ajustes grid contenedor*/
+
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr, 0.5fr;
-    width: 100%;
+    width: 100vw;
     min-width: 600px;
     min-height: 100px;
     height: auto;
-    background-color: violet;
-    padding: 0.5%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1% 5%;
+    background-image: url("public/BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+/*Card adjustment*/
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr, 0.5fr;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+/*Ajustes Logo Caballitos de Palo*/
 
 header {
     grid-column: 1 / 2;
     display: flex;
     align-items: center;
-    border: black solid 2px;
+    justify-content: center;
+    padding-left: 5%;
+    position: relative;
+    width: 200px; /* Ajusta según tus necesidades */
+    padding: 20px; /* Ajusta según tus necesidades */
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    top: 50%; /* Ajusta para la posición vertical */
+    right: 0;
+    width: 2px;
+    height: 70%; /* Ajusta la longitud del borde */
+    background-color: black;
+    transform: translateY(-50%);
 }
 
 header img {
     height: auto;
-    width: 200px;
+    width: 100%;
+
 }
+
+/*Ajustes contenedor temporizador y patrocinadores*/
 
 main {
     grid-column: 2 / 6;
-    border: black solid 2px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
 
-section {
-    border: black solid 2px;
-}
+/*Estilos temporizador*/
 
 .time-container {
-    background-color: aquamarine;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
     display: grid;
     grid-column: 1 / 4;
-    padding: 10px;
+    padding: 5%;
+    position: relative;
 }
 
+.time-container::after{
+    content: "";
+    position: absolute;
+    top: 50%; /* Ajusta para la posición vertical */
+    right: 0;
+    width: 2px;
+    height: 70%; /* Ajusta la longitud del borde */
+    background-color: black;
+    transform: translateY(-50%);
+}
+
+/*Estilos titulos*/
+
+h1 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+/*Estilos contenedor patrocinadores*/
+
 .patreons {
-    background-color: lightyellow;
-    font-family: "Roboto", sans-serif;
     display: grid;
     grid-column: 4 / 6;
-    padding: 10px;
+    padding: 5%;
 }
+
+.patreons img {
+    width: 80%;
+    height: auto;
+    justify-self: center;
+    padding-bottom: 2%;
+}
+
+/*Estilos footer*/
 
 footer {
     grid-column: 1 / 6;
-    background-color: antiquewhite;
-    border: black solid 2px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,4 +134,17 @@ footer {
 footer img.footer-image {
     width: 40%;
     height: auto;
+}
+
+
+/*Ajustes dispositivos móviles*/
+
+@media (max-width:768px){
+    h1, h2{
+        font-size: 1em;
+    }
+    
+    h3{
+        font-size: 0.5em;
+    }
 }

@@ -5,7 +5,7 @@ setInterval(() => {
     let limitDate = new Date("2024-06-29T16:00:00");
     let timeRemain = limitDate - currentDate;
 
-    remain.innerHTML = `<h2>${setCountDown(timeRemain)}</h2>`;
+    remain.innerHTML = `<h1>${setCountDown(timeRemain)}</h1>`;
 }, 1000);
 
 function setCountDown(timeRemain) {
@@ -18,7 +18,7 @@ function setCountDown(timeRemain) {
 
     let timerData = '';
     for (let [unit, value] of Object.entries(timeInfo)) {
-        timerData += `<span>${value} ${unit}</span> `;
+        timerData += `<span>${value} ${unit}  </span> `;
     }
 
     return timerData.trim();

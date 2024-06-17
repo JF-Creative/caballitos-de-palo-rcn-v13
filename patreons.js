@@ -6,9 +6,9 @@ let urlLogos = {
     Uniminuto:'public/AJUSTADOR-LOGOS_0005_UNIMINUTO.png',
     Escobar_Arias:'public/AJUSTADOR-LOGOS_0002_ESCOBAR-ARIAS.png',
     Bocared:'public/AJUSTADOR-LOGOS_0003_BOCARED.png',
-    Mercacentro:'public/AJUSTADOR-LOGOS_0007_MERCACENTRO.png',
     Travesuras:'public/AJUSTADOR-LOGOS_0001_TRAVESURAS.png',
-    Derco:'public/AJUSTADOR-LOGOS_0000_DERCO.png'
+    Derco:'public/AJUSTADOR-LOGOS_0000_DERCO.png',
+    Mercacentro:'public/AJUSTADOR-LOGOS_0007_MERCACENTRO.png'
 };
 
 let urls = Object.values(urlLogos);
