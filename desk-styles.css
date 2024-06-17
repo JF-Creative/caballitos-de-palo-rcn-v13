@@ -11,12 +11,17 @@
 /*Ajustes grid contenedor*/
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto 1fr auto;
-    width: 100%;
-    min-width: 300px;
-    background-color: violet;
+    width: 100vw;
+    min-width: 600px;
+    min-height: 100px;
+    height: auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 1% 5%;
+    background-image: url("public/BG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*Card adjustment*/
@@ -36,43 +41,48 @@
 /*Ajustes Logo Caballitos de Palo*/
 
 header {
-    grid-column: 1 / 6;
+    grid-column: 1 / 2;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: black solid 2px;
-    padding: 10px;
+    padding-left: 5%;
+    position: relative;
+    width: 200px; /* Ajusta según tus necesidades */
+    padding: 20px; /* Ajusta según tus necesidades */
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    top: 50%; /* Ajusta para la posición vertical */
+    right: 0;
+    width: 2px;
+    height: 70%; /* Ajusta la longitud del borde */
+    background-color: black;
+    transform: translateY(-50%);
 }
 
 header img {
     height: auto;
     width: 100%;
-    max-width: 200px;
+
 }
 
 /*Ajustes contenedor temporizador y patrocinadores*/
 
 main {
-    grid-column: 1 / 6;
+    grid-column: 2 / 6;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    border: black solid 2px;
-    padding: 10px;
 }
 
 /*Estilos temporizador*/
 
 .time-container {
-    background-color: aquamarine;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-column: 1 / 3;
-    padding: 10px;
+    display: grid;
+    grid-column: 1 / 4;
+    padding: 5%;
+    position: relative;
 }
 
 .time-container::after{
@@ -99,14 +109,9 @@ h2 {
 /*Estilos contenedor patrocinadores*/
 
 .patreons {
-    background-color: lightyellow;
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-column: 3 / 6;
-    padding: 10px;
+    display: grid;
+    grid-column: 4 / 6;
+    padding: 5%;
 }
 
 .patreons img {
@@ -124,32 +129,22 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px;
 }
 
 footer img.footer-image {
-    width: 100%;
-    max-width: 200px;
+    width: 40%;
     height: auto;
 }
 
-/* Media Queries para pantallas más pequeñas */
-@media (max-width: 768px) {
-    header img {
-        max-width: 150px;
-    }
 
-    .time-container, .patreons {
-        padding: 5px;
-        font-size: 0.8em; /* Reducir el tamaño de la fuente */
-    }
+/*Ajustes dispositivos móviles*/
 
-    footer img.footer-image {
-        max-width: 150px;
+@media (max-width:768px){
+    h1, h2{
+        font-size: 1em;
     }
-
-    footer {
-        padding: 5px;
-        font-size: 0.8em; /* Reducir el tamaño de la fuente */
+    
+    h3{
+        font-size: 0.5em;
     }
 }
