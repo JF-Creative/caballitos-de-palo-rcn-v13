@@ -11,26 +11,12 @@
 /*Ajustes grid contenedor*/
 
 .grid-container {
-<<<<<<< HEAD
-    width: 100vw;
-    min-width: 600px;
-    min-height: 100px;
-    height: auto;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    padding: 1% 5%;
-    background-image: url("public/BG.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-=======
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto 1fr auto;
     width: 100%;
     min-width: 300px;
     background-color: violet;
->>>>>>> 97b38f9e2405e15c441358ae0d84e5d6db6dac4c
 }
 
 /*Card adjustment*/
@@ -54,46 +40,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
-    padding-left: 5%;
-    position: relative;
-    width: 200px; /* Ajusta según tus necesidades */
-    padding: 20px; /* Ajusta según tus necesidades */
-}
-
-header::after{
-    content: "";
-    position: absolute;
-    top: 50%; /* Ajusta para la posición vertical */
-    right: 0;
-    width: 2px;
-    height: 70%; /* Ajusta la longitud del borde */
-    background-color: black;
-    transform: translateY(-50%);
-=======
     border: black solid 2px;
     padding: 10px;
->>>>>>> 97b38f9e2405e15c441358ae0d84e5d6db6dac4c
 }
 
 header img {
     height: auto;
     width: 100%;
-<<<<<<< HEAD
-
-=======
     max-width: 200px;
->>>>>>> 97b38f9e2405e15c441358ae0d84e5d6db6dac4c
 }
 
 /*Ajustes contenedor temporizador y patrocinadores*/
 
 main {
-<<<<<<< HEAD
-    grid-column: 2 / 6;
-=======
     grid-column: 1 / 6;
->>>>>>> 97b38f9e2405e15c441358ae0d84e5d6db6dac4c
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     border: black solid 2px;
@@ -103,12 +63,6 @@ main {
 /*Estilos temporizador*/
 
 .time-container {
-<<<<<<< HEAD
-    display: grid;
-    grid-column: 1 / 4;
-    padding: 5%;
-    position: relative;
-=======
     background-color: aquamarine;
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -119,7 +73,6 @@ main {
     justify-content: center;
     grid-column: 1 / 3;
     padding: 10px;
->>>>>>> 97b38f9e2405e15c441358ae0d84e5d6db6dac4c
 }
 
 .time-container::after{
@@ -146,11 +99,6 @@ h2 {
 /*Estilos contenedor patrocinadores*/
 
 .patreons {
-<<<<<<< HEAD
-    display: grid;
-    grid-column: 4 / 6;
-    padding: 5%;
-=======
     background-color: lightyellow;
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -159,7 +107,6 @@ h2 {
     justify-content: center;
     grid-column: 3 / 6;
     padding: 10px;
->>>>>>> 97b38f9e2405e15c441358ae0d84e5d6db6dac4c
 }
 
 .patreons img {
@@ -186,18 +133,6 @@ footer img.footer-image {
     height: auto;
 }
 
-<<<<<<< HEAD
-
-/*Ajustes dispositivos móviles*/
-
-@media (max-width:768px){
-    h1, h2{
-        font-size: 1em;
-    }
-    
-    h3{
-        font-size: 0.5em;
-=======
 /* Media Queries para pantallas más pequeñas */
 @media (max-width: 768px) {
     header img {
@@ -216,6 +151,5 @@ footer img.footer-image {
     footer {
         padding: 5px;
         font-size: 0.8em; /* Reducir el tamaño de la fuente */
->>>>>>> 97b38f9e2405e15c441358ae0d84e5d6db6dac4c
     }
 }
