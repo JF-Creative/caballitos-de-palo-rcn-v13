@@ -151,10 +151,52 @@ footer img.footer-image {
 @media (max-width:420px){
 
     header{
-        width: 100px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 5%; /* Ajusta según tus necesidades */
+    }
+    
+    header::after{
+        display: none;
+    }
+    
+    header img {
+        height: auto;
+        width: 100%;
+    
+    }
+    
+    main {
+        display: block;
+        padding: 5%;
     }
 
-    h1, h2{
+    .time-container {
+        padding-left: 5%;
+    }
+    
+    .time-container::after{
+        display: none;
+    }
+    
+    .patreons {
+        padding-left: 5%;
+    }
+    
+    .patreons img {
+        width: 80%;
+        height: auto;
+        justify-self: center;
+        padding-bottom: 2%;
+    }
+
+    h1{
+        font-size: 0.8rem;
+    } 
+    
+    h2{
         font-size: 0.5rem;
     }
     
@@ -163,7 +205,7 @@ footer img.footer-image {
     }
 }
 
-@media (max-width:350px){
+/* @media (max-width:350px){
 
     header{
         width: 90px;
@@ -176,4 +218,4 @@ footer img.footer-image {
     h3{
         font-size: 0.3rem;
     }
-}
+} */
