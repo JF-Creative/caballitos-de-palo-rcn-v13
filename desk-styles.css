@@ -11,7 +11,7 @@
 /*Ajustes grid contenedor*/
 
 .grid-container {
-    width: 100vw;
+    width: 100%;
     min-width: 400px;
     min-height: 100px;
     height: auto;
@@ -45,7 +45,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5%;
     position: relative;
     width: 200px; /* Ajusta según tus necesidades */
     padding: 20px; /* Ajusta según tus necesidades */
@@ -149,35 +148,13 @@ footer img.footer-image {
     }
 }
 
-@media (max-width:500px){
+@media (max-width:400px){
 
-    header {
-        grid-column: 1 / 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-left: 5%;
-        position: relative;
-        width: 100px; /* Ajusta según tus necesidades */
-        padding: 20px; /* Ajusta según tus necesidades */
-    }
-    
-    header::after{
-        content: "";
-        position: absolute;
-        top: 50%; /* Ajusta para la posición vertical */
-        right: 0;
-        width: 2px;
-        height: 70%; /* Ajusta la longitud del borde */
-        background-color: black;
-        transform: translateY(-50%);
+    header{
+        width: 100px;
     }
 
-    h1 {
-        font-size: 0.6rem;
-    }
-        
-    h2{
+    h1, h2{
         font-size: 0.5rem;
     }
     
