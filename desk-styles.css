@@ -148,10 +148,25 @@ footer img.footer-image {
     }
 }
 
-@media (max-width:400px){
+@media (max-width:420px){
 
     header{
         width: 100px;
+    }
+
+    h1, h2{
+        font-size: 0.5rem;
+    }
+    
+    h3{
+        font-size: 0.3rem;
+    }
+}
+
+@media (max-width:350px){
+
+    header{
+        width: 90px;
     }
 
     h1, h2{
