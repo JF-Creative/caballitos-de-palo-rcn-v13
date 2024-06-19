@@ -98,7 +98,7 @@ main {
 /*Estilos titulos*/
 
 h1 {
-    font-size: 1.2em;
+    font-size: 1.7em;
 }
 
 h2 {
@@ -236,15 +236,15 @@ footer img.footer-image {
     }
 
     h1{
-        font-size: 0.8rem;
+        font-size: 0.8em;
     } 
     
     h2{
-        font-size: 0.5rem;
+        font-size: 0.5em;
     }
     
     h3{
-        font-size: 0.3rem;
+        font-size: 0.3em;
     }
 }
 
