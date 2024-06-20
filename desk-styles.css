@@ -12,8 +12,7 @@
 
 .grid-container {
     width: 100%;
-    min-width: 400px;
-    min-height: 100px;
+    min-width: 200px;
     height: auto;
     font-family: "Lato", sans-serif;
     font-weight: 300;
