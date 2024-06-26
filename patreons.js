@@ -17,6 +17,7 @@ let urlLogos = {
     Playa_Hawai:'public/AJUSTADOR-LOGOS_0012_PLAYA-HAWAI.png',
     Los_Girasoles:'public/AJUSTADOR-LOGOS_0013_LOS-GIRASOLES.png',
     Nasly_Reyes:'public/AJUSTADOR-LOGOS_0014_NASLY-REYES.png',
+    Ivesur:'public/AJUSTADOR-LOGOS_0017_IVESUR.png',
     Mercacentro:'public/AJUSTADOR-LOGOS_0016_MERCACENTRO.png'
 };
 
