@@ -10,7 +10,7 @@ setInterval(() => {
 
 function setCountDown(timeRemain) {
     const timeInfo = {
-        'Días': Math.floor(timeRemain / (1000 * 60 * 60 * 24)),
+        'Día': Math.floor(timeRemain / (1000 * 60 * 60 * 24)),
         'Horas': Math.floor(timeRemain / (1000 * 60 * 60)) % 24,
         'Minutos': String(Math.floor(timeRemain / (1000 * 60)) % 60).padStart(2, '0'),
         'Segundos': String(Math.floor(timeRemain / 1000) % 60).padStart(2, '0')
