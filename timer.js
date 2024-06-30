@@ -7,8 +7,10 @@ setInterval(() => {
   let datelimit1 = new Date("2024-06-29T07:00:00");
   let datelimit2 = new Date("2024-06-29T12:00:00");
 
-  if (currentDate > datelimit2) {
+  if (currentDate > datelimit2 && currentDate < limitDate) {
     remain.innerHTML = `<h1>¡Es hoy!</h1><h2>Te esperamos en Mercacentro de la Calle 37 con Carrera Quinta a las 4:00 p.m.</h2>`;
+  } else if (currentDate > limitDate) {
+    remain.innerHTML = `<h1>¡Éxito Total!</h1><h2>Fuimos miles de participantes en esta cabalgata. ¡Gracias Ibagué!</h2>`;
   } else {
     remain.innerHTML = `<h2>Falta:</h2><h1>${setCountDown(
       timeRemain,
